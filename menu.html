@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- font Poppins -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="container">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div
+            class="container rounded-4 shadow-lg px-4 py-md-2"
+            style="background-color: #3f2305"
+          >
+            <a class="navbar-brand order-1" href="index.html">
+              <p class="mb-0 text-white poppins-font-bold">Belly's</p>
+            </a>
+            <div class="ml-auto order-3">
+              <button
+                class="navbar-toggler"
+                style="background-color: white"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse order-2" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white poppins-font-regular"
+                    href="aboutUs.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white poppins-font-regular"
+                    href="menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white poppins-font-regular"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="order-4 ml-auto">
+              <button
+                class="btn btn-outline-white bg-white rounded-pill btn-sm"
+                type="submit"
+              >
+                <a href="cart.html">
+                  <i class="bi bi-basket2-fill px-2" style="color: #3f2305"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <h1 class="display-4 poppins-font-bold" style="margin-top: 80px">
+          Our Menu
+        </h1>
+        <p class="lead display-4 poppins-font-light" style="font-size: 30px">
+          Explore our delicious dessert art.
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu -->
+
+    <div class="py-7 py-md-9 border-bottom mt-5" style="color: #3f2305">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <h2 class="mb-2 poppins-font-bold">Browse by categories</h2>
+
+            <p class="mb-6 poppins-font-light">
+              Dive into Dessert Delight: Explore and Indulge with Our Tempting
+              Treat Categories!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- Navigation -->
+            <div
+              class="nav justify-content-center mb-5"
+              id="menuTabs"
+              role="tablist"
+            >
+              <a
+                class="nav-link menu-tab active rounded-2"
+                id="PastriesTab"
+                data-bs-toggle="tab"
+                href="#Pastries"
+                role="tab"
+                aria-controls="Pastries"
+                aria-selected="true"
+              >
+                Pastries
+              </a>
+              <a
+                class="nav-link menu-tab rounded-2"
+                id="CakesTab"
+                data-bs-toggle="tab"
+                href="#Cakes"
+                role="tab"
+                aria-controls="Cakes"
+              >
+                Cakes
+              </a>
+              <a
+                class="nav-link menu-tab rounded-2"
+                id="IceCreamAndSorbetTab"
+                data-bs-toggle="tab"
+                href="#IceCreamAndSorbet"
+                role="tab"
+                aria-controls="IceCreamAndSorbet"
+              >
+                Ice Cream & Sorbet
+              </a>
+              <a
+                class="nav-link menu-tab rounded-2"
+                id="drinksTab"
+                data-bs-toggle="tab"
+                href="#drinks"
+                role="tab"
+                aria-controls="drinks"
+              >
+                Drinks
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Content -->
+            <div class="tab-content" id="menuContent">
+              <div
+                class="tab-pane fade show active"
+                id="Pastries"
+                role="tabpanel"
+                aria-labelledby="PastriesTab"
+              >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Raspberry Bliss Tartlet.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Raspberry Bliss Tartlet
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A delicate tartlet filled with velvety raspberry
+                            compote, nestled in a buttery, flaky crust. Topped
+                            with a light dusting of powdered sugar for the
+                            perfect balance of sweetness and tartness.
+                          </p>
+                        </div>
+                        <div class="col-2 poppins-font-regular">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.99
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modal-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Decadent Chocolate Éclair.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Decadent Chocolate Éclair
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Indulge in layers of rich, dark chocolate ganache
+                            encasing a smooth vanilla pastry cream, all enrobed
+                            in a crisp choux pastry shell. A classic French
+                            treat reimagined for pure chocolate ecstasy.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.49
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Citrus Burst Danish.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Citrus Burst Danish
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A delightful marriage of zesty citrus flavors and
+                            creamy cheese filling enveloped in flaky, golden
+                            layers. Topped with a citrus glaze, this Danish
+                            promises a refreshing burst with every bite.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.79
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Almond Croissant Perfection.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Almond Croissant Perfection
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Experience the allure of our almond croissant,
+                            featuring layers of buttery, flaky pastry filled
+                            with almond paste and generously adorned with
+                            toasted almond slices. A true delight for almond
+                            enthusiasts.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.99
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Mixed Berry Galette.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Mixed Berry Galette
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A rustic pastry masterpiece featuring a medley of
+                            fresh berries nestled in a golden, free-form crust.
+                            The natural sweetness of strawberries, blueberries,
+                            and raspberries shines in every slice.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $6.29
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/pastries/Caramel Pecan Pillow.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Caramel Pecan Pillow
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A heavenly blend of gooey caramel and toasted pecans
+                            encased in a cloud-like puff pastry. This indulgent
+                            treat is generously drizzled with caramel for a
+                            sumptuous, sweet experience.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $7.49
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modal-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="Cakes"
+                role="tabpanel"
+                aria-labelledby="CakesTab"
+              >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Classic Vanilla Bean Cake.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Classic Vanilla Bean Cake
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A timeless favorite featuring layers of moist
+                            vanilla bean cake, filled with velvety vanilla
+                            buttercream. Simple, elegant, and perfect for any
+                            occasion.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $13.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Decadent Chocolate Ganache Cake.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Decadent Chocolate Ganache Cake
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Indulge in the richness of dark chocolate with
+                            layers of moist chocolate cake covered in a smooth
+                            and glossy chocolate ganache. A chocolate lover's
+                            dream.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $15.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Lemon Raspberry Delight Cake.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Lemon Raspberry Delight Cake
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A refreshing combination of zesty lemon cake layers
+                            and sweet raspberry filling, topped with a light
+                            lemon cream cheese frosting. A burst of fruity
+                            goodness in every bite.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $18.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Carrot Walnut Cake with Cream Cheese Frosting.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Carrot Walnut Cake with Cream Cheese Frosting
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Moist carrot cake studded with chopped walnuts and
+                            layered with luscious cream cheese frosting. A
+                            classic choice with a delightful crunch.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $16.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Strawberry Shortcake Tower.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Strawberry Shortcake Tower
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Layers of vanilla sponge cake alternated with fresh
+                            strawberries and whipped cream. A light and summery
+                            delight that's perfect for special celebrations.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $12.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/cakes/Red Velvet Cheesecake.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Red Velvet Cheesecake
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            The perfect marriage of red velvet cake and creamy
+                            cheesecake layers, finished with a decadent cream
+                            cheese frosting. A showstopper for any festive
+                            occasion.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $23.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalcake-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalcake-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="IceCreamAndSorbet"
+                role="tabpanel"
+                aria-labelledby="IceCreamAndSorbetTab"
+              >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Classic Vanilla Bean Ice Cream.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Classic Vanilla Bean Ice Cream
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Creamy and indulgent vanilla bean ice cream made
+                            with real vanilla pods for a rich and aromatic
+                            flavor. A timeless favorite that pairs well with any
+                            dessert.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.50
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Raspberry Lemon Sorbet.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Raspberry Lemon Sorbet
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A refreshing and tangy sorbet made with ripe
+                            raspberries and zesty lemons. Dairy-free and perfect
+                            for a palate-cleansing experience.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.50
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Chocolate Hazelnut Swirl Ice Cream.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Chocolate Hazelnut Swirl Ice Cream
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Decadent chocolate ice cream swirled with ribbons of
+                            luscious hazelnut for a delightful combination of
+                            creamy and nutty flavors. A chocolate lover's
+                            delight.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Mango Passionfruit Sorbet.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Mango Passionfruit Sorbet
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A tropical delight featuring the sweet and vibrant
+                            flavors of ripe mangoes and passionfruit. A light
+                            and fruity option for a guilt-free indulgence.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Mint Chocolate Chip Ice Cream.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Mint Chocolate Chip Ice Cream
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            Refreshing mint-flavored ice cream studded with
+                            generous chunks of dark chocolate. A classic pairing
+                            that provides a cool and satisfying treat.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.75
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/icecream/Blood Orange Sorbet.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Blood Orange Sorbet
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A citrusy sorbet made from the intense and unique
+                            flavor of blood oranges. A bold and refreshing
+                            choice that stands out on its own.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.75
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modalice-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modalice-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="drinks"
+                role="tabpanel"
+                aria-labelledby="drinksTab"
+              >
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Caramel Macchiato Delight.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Caramel Macchiato Delight
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A heavenly blend of espresso and steamed milk,
+                            swirled with rich caramel and topped with whipped
+                            cream. This sweet and caffeinated treat is the
+                            perfect pick-me-up.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.50
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Iced Berry Bliss Tea.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Iced Berry Bliss Tea
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A refreshing iced tea infused with a medley of mixed
+                            berries, served over ice. A fruity and cooling
+                            beverage that complements your sweet treats.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $3.75
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Chocolate Mint Dream Shake.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Chocolate Mint Dream Shake
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A thick and creamy chocolate milkshake infused with
+                            cool mint flavor, crowned with whipped cream and
+                            chocolate shavings. Indulge in this decadent and
+                            refreshing shake.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Toasted Coconut Latte.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Toasted Coconut Latte
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A luscious latte featuring espresso and steamed
+                            milk, with the exotic twist of toasted coconut
+                            syrup. Topped with a sprinkle of toasted coconut
+                            flakes for added flavor.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $4.75
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Fruit Explosion Smoothie.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">
+                            Fruit Explosion Smoothie
+                          </h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A vibrant and energizing smoothie bursting with the
+                            goodness of mixed fruits like strawberries, bananas,
+                            and mango. A wholesome and satisfying beverage
+                            option.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $5.50
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img
+                              class="object-fit-cover"
+                              src="asset/Drinks/Chai Affogato.jpg"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2 poppins-font-bold">Chai Affogato</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0 poppins-font-light">
+                            A unique twist on the classic affogato, featuring a
+                            scoop of vanilla ice cream drowned in a spiced chai
+                            tea. A delightful blend of warm and cold, perfect
+                            for dessert lovers.
+                          </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div
+                            class="fs-4 font-serif text-center poppins-font-regular"
+                          >
+                            $6.00
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-sm mt-4 ms-1 px-4 rounded-3"
+                            data-toggle="modal"
+                            data-target=".bd-example-modaldrinks-sm"
+                            style="
+                              font-size: 25px;
+                              background-color: #3f2305;
+                              color: white;
+                            "
+                          >
+                            <i class="bi bi-cart-plus"></i>
+                          </button>
+                          <div
+                            class="modal fade bd-example-modaldrinks-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="mySmallModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <p class="mx-auto pt-3">
+                                  Your item has been added to your cart
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="background-color: #aa9176">
+      <footer
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-top"
+      >
+        <div class="text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© 2024 Belly's Corner</p>
+        </div>
+
+        <a href="/" class="text-center mb-3 mb-md-0 text-decoration-none">
+          <p
+            class="mb-0 text-white poppins-font-bold"
+            style="font-size: x-large"
+          >
+            Belly's
+          </p>
+        </a>
+
+        <ul class="nav justify-content-center justify-content-md-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">About Us</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

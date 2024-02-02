@@ -1,0 +1,26 @@
+/* .gradient-custom {
+  background: #aa9176;
+
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(101, 78, 52),
+    rgb(221, 199, 157)
+  );
+
+  background: linear-gradient(to right, rgb(101, 78, 52), rgb(221, 199, 157));
+} */
+
+.poppins-font-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-font-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.poppins-font-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
